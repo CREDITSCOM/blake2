@@ -48,7 +48,7 @@ int blake2xs_init_key( blake2xs_state *S, const size_t outlen, const void *key, 
   S->P->depth         = 1;
   store32( &S->P->leaf_length, 0 );
   store32( &S->P->node_offset, 0 );
-  store16( &S->P->xof_length, (uint32_t)outlen );
+  store16( &S->P->xof_length, (uint16_t)outlen );
   S->P->node_depth    = 0;
   S->P->inner_length  = 0;
   memset( S->P->salt,     0, sizeof( S->P->salt ) );

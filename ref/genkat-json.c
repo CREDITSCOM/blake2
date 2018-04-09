@@ -130,10 +130,10 @@ int main() {
   size_t i, j;
 
   for (i = 0; i < sizeof(in); ++i)
-    in[i] = i;
+    in[i] = (uint8_t)i;
 
   for (i = 0; i < sizeof(key); ++i)
-    key[i] = i;
+    key[i] = (uint8_t)i;
 
   printf("[");
   MAKE_KAT(blake2s, BLAKE2S, 1);

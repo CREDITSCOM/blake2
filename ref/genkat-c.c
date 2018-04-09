@@ -113,10 +113,10 @@ int main() {
   size_t i, j;
 
   for (i = 0; i < sizeof(in); ++i)
-    in[i] = i;
+    in[i] = (uint8_t)i;
 
   for (i = 0; i < sizeof(key); ++i)
-    key[i] = i;
+    key[i] = (uint8_t)i;
 
   puts("#ifndef BLAKE2_KAT_H\n"
        "#define BLAKE2_KAT_H\n\n\n"

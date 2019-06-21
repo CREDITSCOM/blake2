@@ -11,3 +11,5 @@ add_library(${PROJECT_NAME}
   ref/blake2sp-ref.c
   ref/blake2xb-ref.c
   ref/blake2xs-ref.c )
+
+target_include_directories(blake2 PUBLIC ref)
